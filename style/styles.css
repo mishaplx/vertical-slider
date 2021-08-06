@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .left {
+  width: 30%;
+  height: 100vh;
+  position: relative;
+  background-color: black;
+}
+
+.right {
+  height: 100vh;
+  background: url(../images/img0.jpg);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  width: 70%;
+}
+
+.block__arrow {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  cursor: pointer;
+}
+
+.block__arrow :hover {
+  border-radius: 25px;
+}
+
+.block {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  opacity: 0.3;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.block :hover {
+  opacity: 0.5;
+}
+
+.block :last-child {
+  margin-bottom: 0px;
+}
+
+.block img {
+  width: 50px;
+  height: 50px;
+}
+/*# sourceMappingURL=styles.css.map */

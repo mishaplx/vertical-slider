@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  transition: 0.5s;
+}
+.container {
+  max-width: 100%;
+  display: flex;
+  .left {
+    width: 30%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+  }
+}
+.right {
+  height: 100vh;
+  background: url(../images/img0.jpg);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important ;  
+  width: 70%;
+}
+.block__arrow {
+  position: absolute;
+  right: 0%;
+  top: 50%; // сделать по центру экрана с помощью calc
+  cursor: pointer;
+  :hover {
+    border-radius: 25px;
+  }
+}
+.block {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  opacity: 0.3;
+  padding: 5px;
+  margin-bottom: 10px;
+
+  :hover {
+    opacity: 0.5;
+  }
+  :last-child {
+    margin-bottom: 0px;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
