@@ -14,7 +14,7 @@ function upFun() {
   const objImages = [
     {
       id: 0,
-      images: `url(../images/img${countupImg()}.jpg)`,
+      images: `url(./images/img${countupImg()}.jpg)`,
       background: `#${(Math.random().toString(16) + '000000').substring(2,8).toUpperCase()}`,
     },
   ];
@@ -34,7 +34,7 @@ function downFun() {
   const objImages = [
     {
       id: 0,
-      images: `url(../images/img${countdownImg()}.jpg)`,
+      images: `url(./images/img${countdownImg()}.jpg)`,
       background: `#${(Math.random().toString(16) + '000000').substring(2,8).toUpperCase()}`,
     },
   ];
@@ -68,3 +68,7 @@ document.addEventListener("keydown", (event) => {
     downFun();
   }
 });
+
+right.addEventListener('mousemove', (event)=>{
+  console.log(event.offsetY)
+})
